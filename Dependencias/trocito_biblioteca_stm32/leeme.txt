@@ -1,0 +1,7 @@
+Fragmentos de la biblioteca STM32 ... manipulados para el curso http://armcortexm.blogs.upv.es
+-----------------------------------------------------------------------------------------------
+
+Los módulos stm32* los proporciona St como parte de su biblioteca de periféricos.
+Una parte de esos módulos se han extraido y se han manipulado ligeramente para hacer que sean lo más didácticos posibles con los ejemplos asociados.
+
+

@@ -1,0 +1,31 @@
+Dependencies for Project 'plantilla', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f4xx.s)(0x55AE227D)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Dades_compartides\Syncthing\Programacio\Curso-ARM-Cortex\Proyectos\0_Led\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 515" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\output\startup_stm32f4xx.lst --xref -o .\output\startup_stm32f4xx.o --depend .\output\startup_stm32f4xx.d)
+F (.\main.c)(0x55AE2FEF)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\..\Dependencias\trocito_biblioteca_stm32 -I..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include-I D:\Dades_compartides\Syncthing\Programacio\Curso-ARM-Cortex\Proyectos\0_Led\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C2A828)
+I (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_rcc.h)(0x55AE2293)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA6856)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h)(0x55099E74)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA6856)
+I (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_gpio.h)(0x55AE2293)
+F (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_gpio.c)(0x55AE24CF)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\..\Dependencias\trocito_biblioteca_stm32 -I..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include-I D:\Dades_compartides\Syncthing\Programacio\Curso-ARM-Cortex\Proyectos\0_Led\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx-o .\output\stm32f4xx_gpio.o --omf_browse .\output\stm32f4xx_gpio.crf --depend .\output\stm32f4xx_gpio.d)
+I (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_gpio.h)(0x55AE2293)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA6856)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h)(0x55099E74)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C2A828)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h)(0x55099E74)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA6856)
+I (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_rcc.h)(0x55AE2293)
+F (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_rcc.c)(0x55AE2293)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\..\Dependencias\trocito_biblioteca_stm32 -I..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include-I D:\Dades_compartides\Syncthing\Programacio\Curso-ARM-Cortex\Proyectos\0_Led\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx-o .\output\stm32f4xx_rcc.o --omf_browse .\output\stm32f4xx_rcc.crf --depend .\output\stm32f4xx_rcc.d)
+I (..\..\Dependencias\trocito_biblioteca_stm32\stm32f4xx_rcc.h)(0x55AE2293)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h)(0x4EAA6856)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h)(0x55099E74)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C2A828)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55099E74)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h)(0x55099E74)
+I (..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x4EAA6856)
