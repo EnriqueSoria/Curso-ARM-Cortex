@@ -1,0 +1,6 @@
+Biblioteca básica para el manejo de un GLCD compatible ks0108
+-------------------------------------------------------------
+
+Ver instrucciones en http://armcortexm.blogs.upv.es
+
+

@@ -1,0 +1,9 @@
+.\output\stm32f4xx_rcc_1.o: ..\..\Dependencias\ks0108_stm32f4\stm32f4xx_rcc.c
+.\output\stm32f4xx_rcc_1.o: ..\..\Dependencias\ks0108_stm32f4\stm32f4xx_rcc.h
+.\output\stm32f4xx_rcc_1.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\stm32f4xx_rcc_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h
+.\output\stm32f4xx_rcc_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\stm32f4xx_rcc_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h
+.\output\stm32f4xx_rcc_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h
+.\output\stm32f4xx_rcc_1.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h
+.\output\stm32f4xx_rcc_1.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h
