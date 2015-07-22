@@ -1,0 +1,10 @@
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Utilities\STM32F4-Discovery\stm32f4_discovery.c
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Utilities\STM32F4-Discovery\stm32f4_discovery.h
+.\output\stm32f4_discovery.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\stm32f4_discovery.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4.h
+.\output\stm32f4_discovery.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmInstr.h
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmFunc.h
+.\output\stm32f4_discovery.o: ..\..\Dependencias\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4_simd.h
+.\output\stm32f4_discovery.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

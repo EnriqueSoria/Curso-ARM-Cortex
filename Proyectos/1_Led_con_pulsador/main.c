@@ -8,28 +8,35 @@ void led_inicializar(void),
 	led_off(uint16_t led),
 	wait(uint32_t wait);
 
+void boton_inicializar(void);
+uint8_t boton_presionado(void);
+
+
 uint16_t arr[4] = {GPIO_Pin_12, GPIO_Pin_13, GPIO_Pin_14, GPIO_Pin_15};
 
 int main(void) {
 
 	// Inicializamos
 	led_inicializar();
+	boton_inicializar();
 	
+	uint8_t encendido = 0;
 	
 	// Bucle principal
 	while(1) {
 		
-		// Encendemos los 4 leds
-		for(int i=0; i<4; i++){
-			led_on(arr[i]);
-			wait(1000000);
+		while(boton_presionado()) {
+			for(int i=0; i<4; i++){
+					led_on(arr[i]);
+					wait(1000000);
+			}
+			for(int i=0; i<4; i++){
+				led_off(arr[i]);
+				wait(1000000);
+			}
 		}
-		// Apagamos los 4 leds
-		for(int i=0; i<4; i++){
-			led_off(arr[i]);
-			wait(1000000);
-		}
-	}
+		
+	} // fiwhile
 	
 	return(0);
 }
@@ -52,6 +59,9 @@ void led_inicializar(void) {
    GPIO_Init(GPIOD, &GPIO_InitStructure);              // hacer efectiva configuración puerto
 }
 
+/**
+  *	Funciones LED
+  */
 void led_on(uint16_t led) {
 	GPIO_SetBits(GPIOD, led);
 }
@@ -62,4 +72,26 @@ void led_off(uint16_t led) {
 
 void wait(uint32_t wait) {
 	while(wait--);
+}
+
+
+/**
+  *	Funciones BOTON
+  */
+void boton_inicializar(void) {
+	GPIO_InitTypeDef settings;
+	
+	RCC_AHB1PeriphClockCmd( RCC_AHB1Periph_GPIOA, ENABLE );
+	
+	GPIO_StructInit( &settings );
+	
+	settings.GPIO_Pin 	= GPIO_Pin_0;
+	settings.GPIO_Mode	= GPIO_Mode_IN;
+	settings.GPIO_PuPd	= GPIO_PuPd_NOPULL;
+	
+	GPIO_Init( GPIOA, &settings );
+}
+
+uint8_t boton_presionado(void) {
+	return( GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) );
 }
