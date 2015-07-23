@@ -132,6 +132,7 @@ void PendSV_Handler(void)
 {
 }
 
+void delay_ISR(void);
 /**
   * @brief  This function handles SysTick Handler.
   * @param  None
@@ -139,6 +140,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+	delay_ISR();
 }
 
 /******************************************************************************/
