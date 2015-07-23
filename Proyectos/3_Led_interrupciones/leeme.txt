@@ -1,0 +1,13 @@
+Plantilla ITM debug
+-------------------
+Para el curso de http://armcortexm.blogs.upv.es
+
+Características:
+- Depuración SWV preparadada
+- Preconfigurado para las rutas de la STM32F4-Discovery_FW_V1.1.0 cque se debe colocar ../terceros
+
+Instrucciones
+-Descomprimir en el directorio raíz de actividades del curso
+-Abrir con Keil uVision el archivo ./plantilla_ITM_debug/plantilla_ITM_debug.uvproj
+
+
