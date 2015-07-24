@@ -53,6 +53,8 @@ void HwInit( void ) {
     STM_EVAL_LEDInit(LED3);
     STM_EVAL_LEDInit(LED5);
     STM_EVAL_LEDInit(LED6);
+    
+    return;
 
     /* Turn on LED4 and LED5 */
     STM_EVAL_LEDOn(LED4);

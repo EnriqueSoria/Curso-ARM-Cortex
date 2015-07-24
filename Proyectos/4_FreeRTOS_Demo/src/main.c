@@ -55,6 +55,54 @@ uint64_t u64IdleTicks=0;    // Value of u64IdleTicksCnt is copied once per sec.
 uint64_t u64IdleTicksCnt=0; // Counts when the OS has no task to execute.
 uint16_t u16PWM1=0;
 
+// ------ MIS LEDS ----------------------------------------------------------
+#define mainLED_TASK_PRIORITY      ( tskIDLE_PRIORITY + 2 )
+#define LED1 LED5
+#define LED2 LED6
+
+// Definimos el tipo led_holder
+typedef struct {
+	Led_TypeDef led;
+	uint32_t delay;
+} led_holder;
+
+
+// ------ Definimos las tareas para los leds -------
+#define NUM_LEDS 4
+xTaskHandle hLEDTask[NUM_LEDS];
+led_holder parameters[NUM_LEDS];
+
+portTASK_FUNCTION( vled1, pvParameters ) {  // la tarea
+	led_holder *par = (led_holder*) pvParameters;
+	while(1) {
+				STM_EVAL_LEDToggle(par->led);
+				vTaskDelay(par->delay / portTICK_RATE_MS); // dormir 200 ms
+	}
+}
+portTASK_FUNCTION( vled2, pvParameters ) {  // la tarea
+	led_holder *par = (led_holder*) pvParameters;
+	while(1) {
+				STM_EVAL_LEDToggle(par->led);
+				vTaskDelay(par->delay / portTICK_RATE_MS); // dormir 200 ms
+	}
+}
+portTASK_FUNCTION( vled3, pvParameters ) {  // la tarea
+	led_holder *par = (led_holder*) pvParameters;
+	while(1) {
+				STM_EVAL_LEDToggle(par->led);
+				vTaskDelay(par->delay / portTICK_RATE_MS); // dormir 200 ms
+	}
+}
+portTASK_FUNCTION( vled4, pvParameters ) {  // la tarea
+	led_holder *par = (led_holder*) pvParameters;
+	while(1) {
+				STM_EVAL_LEDToggle(par->led);
+				vTaskDelay(par->delay / portTICK_RATE_MS); // dormir 200 ms
+	}
+}
+
+
+
 // ============================================================================
 int main( void ) {
 
@@ -64,14 +112,24 @@ int main( void ) {
 	vDebugPrintf( "\r\nEPS Test1 0.0.1 - 1/4/2012\r\n" );
 	vDebugPrintResetType();
 
-	// Tasks get started here...
-	xTaskCreate( vTimeTask, (signed char *) "TIME", configMINIMAL_STACK_SIZE, 
-					NULL, mainTIME_TASK_PRIORITY, &hTimeTask );
-	xTaskCreate( vMemsTask, (signed char *) "MEMS", configMINIMAL_STACK_SIZE, 
-					NULL, mainMEMS_TASK_PRIORITY, &hMemsTask );
-	xTaskCreate( vDebugTask, (signed char *) "DEBUG", configMINIMAL_STACK_SIZE,
-					NULL, mainDEBUG_TASK_PRIORITY, &hDebugTask );
-
+	// Definimos los leds y los retardos, y creamos las tareas
+	parameters[0].led = LED1;
+	parameters[0].delay = 100;
+	xTaskCreate( vled1, (signed char *) "LED1", configMINIMAL_STACK_SIZE, &parameters[0], mainLED_TASK_PRIORITY, &hLEDTask[0] );
+	
+	parameters[1].led = LED2;
+	parameters[1].delay = 200;
+	xTaskCreate( vled2, (signed char *) "LED2", configMINIMAL_STACK_SIZE, &parameters[1], mainLED_TASK_PRIORITY, &hLEDTask[1] );
+	
+	parameters[2].led = LED3;
+	parameters[2].delay = 300;
+	xTaskCreate( vled3, (signed char *) "LED3", configMINIMAL_STACK_SIZE, &parameters[2], mainLED_TASK_PRIORITY, &hLEDTask[2] );
+	
+	parameters[3].led = LED4;
+	parameters[3].delay = 400;
+	xTaskCreate( vled4, (signed char *) "LED4", configMINIMAL_STACK_SIZE, &parameters[3], mainLED_TASK_PRIORITY, &hLEDTask[3] );
+	
+	
 	vTaskStartScheduler(); // This should never return.
 
 	// Will only get here if there was insufficient memory to create
